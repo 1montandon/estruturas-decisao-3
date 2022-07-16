@@ -12,10 +12,21 @@
     */
 
     //ENTRADA
-
+    const turno = String(prompt("Informe o horario em que estuda (Matutino, Vespertino ou Noturno) "))
 
     //PROCESSAMENTO
-
+    let bom
+    
+    if (turno.toLowerCase() === "matutino"){
+    bom = "Bom Dia!"} 
+    else if (turno.toLowerCase() === "vespertino"){
+    bom = "Bom Tarde!"} 
+    else if (turno.toLowerCase() === "noturno"){
+    bom = "Bom Noite!"} 
+    else {  
+    bom = "Valor Inválido!"
+    }
+    document.write(`${bom}`)
     
     //SAÍDA
 
