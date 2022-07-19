@@ -11,10 +11,22 @@
     */
 
     //ENTRADA
-
+    const numero = parseInt(prompt("Informe seu numero inteiro menor que 100"))
 
     //PROCESSAMENTO
+    let conceito
+    const centenas = Math.floor(numero/100)
+    const dezenas = Math.floor((numero%100)/10)
+    const unidades = Math.floor((numero%100)%10)
 
+    if(centenas > 1) conceito  =  centenas + " centenas, "
+    else conceito = centenas + " centena, "
+    if(dezenas > 1)conceito = conceito  + dezenas + " dezenas e "
+    else conceito = conceito + dezenas + " dezena e "
+    if(unidades > 1)conceito = conceito + unidades + " unidades. "
+    else conceito = conceito + unidades + " unidade. "
+
+    document.write(conceito)
     
     //SAÍDA
 
